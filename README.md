@@ -3,7 +3,7 @@ Php ile günlük nöbetçi eczane listesini veren Php sınıfı
 
 Eczanelere ait veriler <a href="https://bulurum.com/" target="_blank">bulurum.com</a> sitesinden alınmıştır. 
 
-Ecza.io sitesinden çekilen veriler, json olarak tutulabilir. Bu sayede her seferinde Bulurum.com sitesinden çekilmeyeceği için performans artışı sağlanabilir.
+Bulurum.com sitesinden çekilen veriler, json olarak tutulabilir. Bu sayede her seferinde Bulurum.com sitesinden çekilmeyeceği için performans artışı sağlanabilir.
 
 <h2>Çalışma Mantığı</h2>
 
