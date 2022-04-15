@@ -60,14 +60,14 @@
                         $time = trim(strip_tags(html_entity_decode(str_replace('-', ' - ', $cur_time[1][$i]))));
 
                         $this->data[$i]['title']    = $cur_title[1][0];
-                        $this->data[$i]['district']      = $this->district;
+                        $this->data[$i]['district'] = $this->district;
                         $this->data[$i]['date']     = $date[1];
-                        $this->data[$i]['day']       = $date[0];
-                        $this->data[$i]['time']      = $time;
-                        $this->data[$i]['name']       = $name;
-                        $this->data[$i]['address']     = $address;
-                        $this->data[$i]['phone']   = trim($cur_phone[1][$i]);
-                        $this->data[$i]['maps']      = 'https://maps.google.com/maps?q='.urlencode($address);
+                        $this->data[$i]['day']      = $date[0];
+                        $this->data[$i]['time']     = $time;
+                        $this->data[$i]['name']     = $name;
+                        $this->data[$i]['address']  = $address;
+                        $this->data[$i]['phone']    = trim($cur_phone[1][$i]);
+                        $this->data[$i]['maps']     = 'https://maps.google.com/maps?q='.urlencode($address);
                     }
                 } else {
                     $this->data = NULL;
