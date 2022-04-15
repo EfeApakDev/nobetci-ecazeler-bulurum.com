@@ -4,7 +4,6 @@
      * 	@mail: ufuk.ozdemir1990@gmail.com
      * 	@website: ufukozdemir.website
      */
-
     class Pharmacy {
 
         /**
