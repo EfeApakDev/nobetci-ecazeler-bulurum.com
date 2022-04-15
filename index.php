@@ -5,13 +5,8 @@
      * 	@website: ufukozdemir.website
      */
 
-    // Sınıfımızı Sayfamıza Dahil Ettik
     require_once(__DIR__."/Pharmacy.class.php");
-
-    // Sınıfı Başlattık
     $pharmacy = new Pharmacy('Konak');
-
-    // Nöbetçi Eczanelerimizi JSON Olarak Çektik
     $data = $pharmacy->get();
 ?>
 <!doctype html>
