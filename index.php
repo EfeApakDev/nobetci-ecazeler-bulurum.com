@@ -1,7 +1,7 @@
 <?php
     /**
      * 	@author: Ufuk OZDEMIR
-     * 	@mail: ufuk.ozdemir1990@gmail.com || info@ufukozdemir.website
+     * 	@mail: ufuk.ozdemir1990@gmail.com
      * 	@website: ufukozdemir.website
      */
 
@@ -23,26 +23,9 @@
         <title>Pharmacy on Duty</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-okaidia.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/autoloader/prism-autoloader.min.js"></script>
     </head>
     <body class="align-items-center d-flex h-100 justify-content-center">
         <div class="container">
-            <pre>
-                <code class="language-php">
-require_once('Pharmacy.class.php');
-$pharmacy = new Pharmacy('Konak');
-$data = $pharmacy->get();
-
-foreach ($data as $item) {
-    echo $item->name;
-    echo $item->address;
-    echo $item->phone;
-    echo $item->time;
-}
-                </code>
-            </pre>
             <div class="card shadow-lg">
                 <div class="bg-warning card-header py-3">
                     <h5 class="mb-0 text-center"><?php echo $data[0]->title. ' - ' .$data[0]->day. ' ' .$data[0]->date; ?></h5>
