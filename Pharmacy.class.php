@@ -116,6 +116,31 @@
             $string = preg_replace('|-+|', '-', $string);
             return trim($string, '-');
         }
+        
+        /**
+         * Phone Convert
+         * @param $string
+         * @return string
+         */
+        public function format($string) {
+            $str1 = substr($string, 0, 1);
+            $str2 = substr($string, 1, 3);
+            $str3 = substr($string, 4, 3);
+            $str4 = substr($string, 7, 4);
+            return $str1.' ('.$str2.') '.$str3.' '.$str4;
+        }
+
+        /**
+         * Phone Clear
+         * @param $string
+         * @return string
+         */
+        public function clear($string) {
+            $string = preg_replace("/\s+/", "", $string);
+            $string = str_replace("(", "", $string);
+            $string = str_replace(")", "", $string);
+            return trim($string);
+        }
 
         /**
          * Data Extraction with Curl
