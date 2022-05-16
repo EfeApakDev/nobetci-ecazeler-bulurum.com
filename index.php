@@ -41,7 +41,7 @@
                                     <tr>
                                         <td><?php echo $item->name; ?></td>
                                         <td><a href="<?php echo $item->maps; ?>" target="_blank" class="text-decoration-none text-body"><i class="bi bi-link-45deg"></i> <?php echo $item->address; ?></a></td>
-                                        <td><a href="tel:<?php echo $item->phone; ?>" target="_blank" class="text-decoration-none text-body"><i class="bi bi-telephone"></i> <?php echo $item->phone; ?></a></td>
+                                        <td><a href="tel:<?php echo $item->phone; ?>" target="_blank" class="text-decoration-none text-body"><i class="bi bi-telephone"></i> <?php echo $pharmacy->format($item->phone); ?></a></td>
                                         <td><?php echo $item->time; ?></td>
                                     </tr>
                                 <?php endforeach; ?>
